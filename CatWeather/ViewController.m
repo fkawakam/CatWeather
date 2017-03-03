@@ -7,10 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "MyClass.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *catField;
 @property (weak, nonatomic) IBOutlet UILabel *humanLabel;
+@property (weak, nonatomic) IBOutlet UITextField *msgTextField;
 
 - (IBAction)bkgTapped:(id)sender;
 - (IBAction)calc:(UIButton *)sender;
@@ -21,6 +23,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    MyClass *myObj = [[MyClass alloc]init];
+    myObj.where = @"大分";
+    NSString *myMessage = [myObj hello:@"小野"];
+    self.msgTextField.text = myMessage;
 }
 
 

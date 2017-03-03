@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201DE4FD1E69422E004A3BEB /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DE4FC1E69422E004A3BEB /* MyClass.m */; };
 		206B78A01E67F6AF009B9B72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B789F1E67F6AF009B9B72 /* main.m */; };
 		206B78A31E67F6AF009B9B72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B78A21E67F6AF009B9B72 /* AppDelegate.m */; };
 		206B78A61E67F6AF009B9B72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B78A51E67F6AF009B9B72 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		201DE4FB1E69422E004A3BEB /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyClass.h; path = ../MyClass.h; sourceTree = "<group>"; };
+		201DE4FC1E69422E004A3BEB /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyClass.m; path = ../MyClass.m; sourceTree = "<group>"; };
 		206B789B1E67F6AF009B9B72 /* CatWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		206B789F1E67F6AF009B9B72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		206B78A11E67F6AF009B9B72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 		206B789D1E67F6AF009B9B72 /* CatWeather */ = {
 			isa = PBXGroup;
 			children = (
+				201DE4FB1E69422E004A3BEB /* MyClass.h */,
+				201DE4FC1E69422E004A3BEB /* MyClass.m */,
 				206B78A11E67F6AF009B9B72 /* AppDelegate.h */,
 				206B78A21E67F6AF009B9B72 /* AppDelegate.m */,
 				206B78A41E67F6AF009B9B72 /* ViewController.h */,
@@ -276,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201DE4FD1E69422E004A3BEB /* MyClass.m in Sources */,
 				206B78A61E67F6AF009B9B72 /* ViewController.m in Sources */,
 				206B78A31E67F6AF009B9B72 /* AppDelegate.m in Sources */,
 				206B78A01E67F6AF009B9B72 /* main.m in Sources */,
@@ -432,6 +438,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.dreamarts.fk.CatWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -444,6 +451,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.dreamarts.fk.CatWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
