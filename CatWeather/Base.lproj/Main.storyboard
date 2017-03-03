@@ -40,7 +40,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                                 <connections>
                                     <action selector="calc:" destination="BYZ-38-t0r" eventType="editingChanged" id="JCL-iu-yzl"/>
-                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="XYl-MZ-dU3"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Yje-vp-hoY"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="人なら" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSo-2i-mt4">
@@ -63,8 +63,19 @@
                                 <color key="shadowColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V4P-YS-OP0">
+                                <rect key="frame" x="320" y="265" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8sg-Vc-IHb" appends="YES" id="APg-py-oEY"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="catField" destination="P5L-B1-4eq" id="sd4-xw-IcA"/>
@@ -72,8 +83,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8sg-Vc-IHb">
+                    <connections>
+                        <action selector="bkgTapped:" destination="BYZ-38-t0r" id="JfJ-7Q-2Ba"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="37.5" y="86.71875"/>
+            <point key="canvasLocation" x="77" y="60"/>
         </scene>
     </scenes>
 </document>
