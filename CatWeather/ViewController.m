@@ -7,26 +7,29 @@
 //
 
 #import "ViewController.h"
-#import "MyClass.h"
+#import "Food.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *catField;
-@property (weak, nonatomic) IBOutlet UILabel *humanLabel;
-@property (weak, nonatomic) IBOutlet UITextField *msgTextField;
-
+{
+    Food *foodObj;
+}
+@property (weak, nonatomic) IBOutlet UITextField *answerLabel;
+- (IBAction)doChoice:(UIButton *)sender;
 - (IBAction)bkgTapped:(id)sender;
-- (IBAction)calc:(UIButton *)sender;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    MyClass *myObj = [[MyClass alloc]init];
-    myObj.where = @"大分";
-    NSString *myMessage = [myObj hello:@"小野"];
-    self.msgTextField.text = myMessage;
+    foodObj = [[Food alloc] initWithFoods:nil];
+    CGRect rect = CGRectMake(10,300,200,30);
+    UILabel *myLabel = [[UILabel alloc]initWithFrame:rect];
+    myLabel.text = @"今日もいいね!";
+    myLabel.textAlignment = NSTextAlignmentCenter;
+    myLabel.textColor = [UIColor whiteColor];
+    myLabel.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:myLabel];
 }
 
 
@@ -36,25 +39,13 @@
 }
 
 
+- (IBAction)doChoice:(UIButton *)sender {
+    NSString *f = [foodObj choiceFood];
+    NSLog(@"FK No.100 %@[%d][%d]", f, [foodObj counter], foodObj.counter);
+    _answerLabel.text = f;
+}
+
 - (IBAction)bkgTapped:(id)sender {
     [self.view endEditing:YES];
-}
-
-- (IBAction)calc:(UITextField *)sender {
-    double catAge = [self.catField.text doubleValue];
-    double humanAge = [self catAgeToHumanAge:catAge];
-    self.humanLabel.text = [NSString stringWithFormat:@"%.1f", humanAge];
-}
-
-- (double)catAgeToHumanAge:(double)catAge{
-    return catAge * 3;
-}
-
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    NSMutableString *tmp = [self.catField.text mutableCopy];
-    [tmp replaceCharactersInRange:range withString:string];
-    BOOL isAgeLimit = [tmp doubleValue] < 100;
-    BOOL isLengthLimit = [tmp length]<=4;
-    return isAgeLimit && isLengthLimit;
 }
 @end
