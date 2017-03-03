@@ -28,8 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (IBAction)calc:(UIButton *)sender {
+- (IBAction)calc:(UITextField *)sender {
     double catAge = [self.catField.text doubleValue];
     double humanAge = [self catAgeToHumanAge:catAge];
     self.humanLabel.text = [NSString stringWithFormat:@"%.1f", humanAge];
