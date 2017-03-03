@@ -11,8 +11,8 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *catField;
 @property (weak, nonatomic) IBOutlet UILabel *humanLabel;
-@property (weak, nonatomic) IBOutlet UIButton *calc;
 
+- (IBAction)calc:(UIButton *)sender;
 @end
 
 @implementation ViewController
@@ -29,4 +29,13 @@
 }
 
 
+- (IBAction)calc:(UIButton *)sender {
+    double catAge = [self.catField.text doubleValue];
+    double humanAge = [self catAgeToHumanAge:catAge];
+    self.humanLabel.text = [NSString stringWithFormat:@"%.1f", humanAge];
+}
+
+- (double)catAgeToHumanAge:(double)catAge{
+    return catAge * 3;
+}
 @end
