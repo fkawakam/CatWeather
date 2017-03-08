@@ -7,19 +7,28 @@
 //
 
 #import "ViewController.h"
+#import "Food.h"
+#import "CorpBeta.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *catField;
-@property (weak, nonatomic) IBOutlet UILabel *humanLabel;
+{
+    Food *foodObj;
+}
+- (IBAction)bkgTapped:(id)sender;
 
-- (IBAction)calc:(UIButton *)sender;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    CGRect rect = CGRectMake(50,100,200,30);
+    UILabel *myLabel = [[UILabel alloc]initWithFrame:rect];
+    myLabel.text = @"今日もいいね!";
+    myLabel.textAlignment = NSTextAlignmentCenter;
+    myLabel.textColor = [UIColor whiteColor];
+    myLabel.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:myLabel];
 }
 
 
@@ -29,13 +38,8 @@
 }
 
 
-- (IBAction)calc:(UIButton *)sender {
-    double catAge = [self.catField.text doubleValue];
-    double humanAge = [self catAgeToHumanAge:catAge];
-    self.humanLabel.text = [NSString stringWithFormat:@"%.1f", humanAge];
+- (IBAction)bkgTapped:(id)sender {
+    [self.view endEditing:YES];
 }
 
-- (double)catAgeToHumanAge:(double)catAge{
-    return catAge * 3;
-}
 @end

@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface CatWeatherTests : XCTestCase
+@interface CorpBetaTests : XCTestCase
 
 @end
 
-@implementation CatWeatherTests
+@implementation CorpBetaTests
 
 - (void)setUp {
     [super setUp];
@@ -24,9 +24,12 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testPlist {
+    int a = 1;
+    XCTAssertEqual(a, 1);
+    CoreBeta *cb = [CoreBeta alloc];
+    XCTAssertNotNil([cb readPlist]);
+    
 }
 
 - (void)testPerformanceExample {
