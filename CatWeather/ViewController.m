@@ -8,22 +8,21 @@
 
 #import "ViewController.h"
 #import "Food.h"
+#import "CorpBeta.h"
 
 @interface ViewController ()
 {
     Food *foodObj;
 }
-@property (weak, nonatomic) IBOutlet UITextField *answerLabel;
-- (IBAction)doChoice:(UIButton *)sender;
 - (IBAction)bkgTapped:(id)sender;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    foodObj = [[Food alloc] initWithFoods:nil];
-    CGRect rect = CGRectMake(10,300,200,30);
+    CGRect rect = CGRectMake(50,100,200,30);
     UILabel *myLabel = [[UILabel alloc]initWithFrame:rect];
     myLabel.text = @"今日もいいね!";
     myLabel.textAlignment = NSTextAlignmentCenter;
@@ -39,13 +38,8 @@
 }
 
 
-- (IBAction)doChoice:(UIButton *)sender {
-    NSString *f = [foodObj choiceFood];
-    NSLog(@"FK No.100 %@[%d][%d]", f, [foodObj counter], foodObj.counter);
-    _answerLabel.text = f;
-}
-
 - (IBAction)bkgTapped:(id)sender {
     [self.view endEditing:YES];
 }
+
 @end

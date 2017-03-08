@@ -8,14 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		201DE5001E694F69004A3BEB /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DE4FF1E694F69004A3BEB /* Food.m */; };
+		201DE5041E69724D004A3BEB /* NatGeo05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 201DE5021E69724D004A3BEB /* NatGeo05.jpg */; };
+		201DE5051E69724D004A3BEB /* NatGeo06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 201DE5031E69724D004A3BEB /* NatGeo06.jpg */; };
+		201DE5081E698374004A3BEB /* tree-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 201DE5061E698374004A3BEB /* tree-1.png */; };
+		201DE5091E698374004A3BEB /* tree-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 201DE5071E698374004A3BEB /* tree-2.png */; };
+		201DE50C1E6983A2004A3BEB /* car_L.png in Resources */ = {isa = PBXBuildFile; fileRef = 201DE50A1E6983A2004A3BEB /* car_L.png */; };
+		201DE50D1E6983A2004A3BEB /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 201DE50B1E6983A2004A3BEB /* house.png */; };
+		203D845E1E6E9CD4001875B1 /* CorpBeta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 203D845D1E6E9CD4001875B1 /* CorpBeta.plist */; };
+		203D84611E6EA83F001875B1 /* CorpBeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D84601E6EA83F001875B1 /* CorpBeta.m */; };
+		203D84631E6EAD5B001875B1 /* CorpBetaTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D84621E6EAD5B001875B1 /* CorpBetaTest2.m */; };
 		206B78A01E67F6AF009B9B72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B789F1E67F6AF009B9B72 /* main.m */; };
 		206B78A31E67F6AF009B9B72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B78A21E67F6AF009B9B72 /* AppDelegate.m */; };
 		206B78A61E67F6AF009B9B72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B78A51E67F6AF009B9B72 /* ViewController.m */; };
 		206B78A91E67F6AF009B9B72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206B78A71E67F6AF009B9B72 /* Main.storyboard */; };
 		206B78AB1E67F6AF009B9B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206B78AA1E67F6AF009B9B72 /* Assets.xcassets */; };
 		206B78AE1E67F6AF009B9B72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206B78AC1E67F6AF009B9B72 /* LaunchScreen.storyboard */; };
-		206B78B91E67F6AF009B9B72 /* CatWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B78B81E67F6AF009B9B72 /* CatWeatherTests.m */; };
 		206B78C41E67F6AF009B9B72 /* CatWeatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B78C31E67F6AF009B9B72 /* CatWeatherUITests.m */; };
+		208046AB1E69866E004EF2D5 /* flower.png in Resources */ = {isa = PBXBuildFile; fileRef = 208046AA1E69866E004EF2D5 /* flower.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +47,16 @@
 /* Begin PBXFileReference section */
 		201DE4FE1E694F69004A3BEB /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
 		201DE4FF1E694F69004A3BEB /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
+		201DE5021E69724D004A3BEB /* NatGeo05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NatGeo05.jpg; sourceTree = "<group>"; };
+		201DE5031E69724D004A3BEB /* NatGeo06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NatGeo06.jpg; sourceTree = "<group>"; };
+		201DE5061E698374004A3BEB /* tree-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree-1.png"; sourceTree = "<group>"; };
+		201DE5071E698374004A3BEB /* tree-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree-2.png"; sourceTree = "<group>"; };
+		201DE50A1E6983A2004A3BEB /* car_L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car_L.png; sourceTree = "<group>"; };
+		201DE50B1E6983A2004A3BEB /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		203D845D1E6E9CD4001875B1 /* CorpBeta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CorpBeta.plist; sourceTree = "<group>"; };
+		203D845F1E6EA83F001875B1 /* CorpBeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorpBeta.h; sourceTree = "<group>"; };
+		203D84601E6EA83F001875B1 /* CorpBeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorpBeta.m; sourceTree = "<group>"; };
+		203D84621E6EAD5B001875B1 /* CorpBetaTest2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorpBetaTest2.m; sourceTree = "<group>"; };
 		206B789B1E67F6AF009B9B72 /* CatWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		206B789F1E67F6AF009B9B72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		206B78A11E67F6AF009B9B72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,11 +68,11 @@
 		206B78AD1E67F6AF009B9B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		206B78AF1E67F6AF009B9B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		206B78B41E67F6AF009B9B72 /* CatWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		206B78B81E67F6AF009B9B72 /* CatWeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatWeatherTests.m; sourceTree = "<group>"; };
 		206B78BA1E67F6AF009B9B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		206B78BF1E67F6AF009B9B72 /* CatWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		206B78C31E67F6AF009B9B72 /* CatWeatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatWeatherUITests.m; sourceTree = "<group>"; };
 		206B78C51E67F6AF009B9B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		208046AA1E69866E004EF2D5 /* flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +100,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		201DE5011E6970C9004A3BEB /* images */ = {
+			isa = PBXGroup;
+			children = (
+				208046AA1E69866E004EF2D5 /* flower.png */,
+				201DE5061E698374004A3BEB /* tree-1.png */,
+				201DE50A1E6983A2004A3BEB /* car_L.png */,
+				201DE50B1E6983A2004A3BEB /* house.png */,
+				201DE5071E698374004A3BEB /* tree-2.png */,
+				201DE5021E69724D004A3BEB /* NatGeo05.jpg */,
+				201DE5031E69724D004A3BEB /* NatGeo06.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		203D845C1E6E9CC4001875B1 /* plists */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = plists;
+			sourceTree = "<group>";
+		};
 		206B78921E67F6AF009B9B72 = {
 			isa = PBXGroup;
 			children = (
@@ -104,12 +144,17 @@
 		206B789D1E67F6AF009B9B72 /* CatWeather */ = {
 			isa = PBXGroup;
 			children = (
+				203D845D1E6E9CD4001875B1 /* CorpBeta.plist */,
+				203D845C1E6E9CC4001875B1 /* plists */,
+				201DE5011E6970C9004A3BEB /* images */,
 				201DE4FE1E694F69004A3BEB /* Food.h */,
 				201DE4FF1E694F69004A3BEB /* Food.m */,
 				206B78A11E67F6AF009B9B72 /* AppDelegate.h */,
 				206B78A21E67F6AF009B9B72 /* AppDelegate.m */,
 				206B78A41E67F6AF009B9B72 /* ViewController.h */,
 				206B78A51E67F6AF009B9B72 /* ViewController.m */,
+				203D845F1E6EA83F001875B1 /* CorpBeta.h */,
+				203D84601E6EA83F001875B1 /* CorpBeta.m */,
 				206B78A71E67F6AF009B9B72 /* Main.storyboard */,
 				206B78AA1E67F6AF009B9B72 /* Assets.xcassets */,
 				206B78AC1E67F6AF009B9B72 /* LaunchScreen.storyboard */,
@@ -130,8 +175,8 @@
 		206B78B71E67F6AF009B9B72 /* CatWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				206B78B81E67F6AF009B9B72 /* CatWeatherTests.m */,
 				206B78BA1E67F6AF009B9B72 /* Info.plist */,
+				203D84621E6EAD5B001875B1 /* CorpBetaTest2.m */,
 			);
 			path = CatWeatherTests;
 			sourceTree = "<group>";
@@ -255,8 +300,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				206B78AE1E67F6AF009B9B72 /* LaunchScreen.storyboard in Resources */,
+				201DE50D1E6983A2004A3BEB /* house.png in Resources */,
 				206B78AB1E67F6AF009B9B72 /* Assets.xcassets in Resources */,
+				201DE5091E698374004A3BEB /* tree-2.png in Resources */,
+				201DE5041E69724D004A3BEB /* NatGeo05.jpg in Resources */,
+				201DE5051E69724D004A3BEB /* NatGeo06.jpg in Resources */,
+				203D845E1E6E9CD4001875B1 /* CorpBeta.plist in Resources */,
+				201DE50C1E6983A2004A3BEB /* car_L.png in Resources */,
 				206B78A91E67F6AF009B9B72 /* Main.storyboard in Resources */,
+				208046AB1E69866E004EF2D5 /* flower.png in Resources */,
+				201DE5081E698374004A3BEB /* tree-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +337,7 @@
 				201DE5001E694F69004A3BEB /* Food.m in Sources */,
 				206B78A61E67F6AF009B9B72 /* ViewController.m in Sources */,
 				206B78A31E67F6AF009B9B72 /* AppDelegate.m in Sources */,
+				203D84611E6EA83F001875B1 /* CorpBeta.m in Sources */,
 				206B78A01E67F6AF009B9B72 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				206B78B91E67F6AF009B9B72 /* CatWeatherTests.m in Sources */,
+				203D84631E6EAD5B001875B1 /* CorpBetaTest2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
